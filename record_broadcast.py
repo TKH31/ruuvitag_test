@@ -12,7 +12,9 @@ while count < 2:
     
     myoutput["MAC"] = mac_addr
     myoutput["count"] = count
-
+    myoutput["timestamp"] = time.time()
+    mytouput["ctime"] = time.ctime()
+    
     f = open("broadcast.log", "a")
     f.write(str(myoutput))
     f.close()
