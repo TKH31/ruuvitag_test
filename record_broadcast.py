@@ -17,6 +17,7 @@ while count < 2:
     
     f = open("broadcast.log", "a")
     f.write(str(myoutput))
+    f.write("\n")
     f.close()
     
     print(str(myoutput))
