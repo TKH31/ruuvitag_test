@@ -1,4 +1,4 @@
-from ruuvitag_sensor.ruuvi import RuuviTagSensor
+from ruuvitag_sensor.ruuvi import RuuviTag
 mac_addr = 'DE:E5:EA:C5:9C:3E'
 count = 0
 sensor = RuuviTag(mac_addr)
