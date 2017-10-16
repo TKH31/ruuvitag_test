@@ -3,7 +3,7 @@ import time
 import argparse
 
 parser = argparse.ArgumentParser(description='Check for infinite loop.')
-parser.add_argument("is_inifinte", action='store_const', nargs='?', default="", required=False)
+parser.add_argument("is_inifinte", action='store_const', nargs='?', default="")
 input = parser.parse_args()
 
 mac_addr = 'DE:E5:EA:C5:9C:3E'
