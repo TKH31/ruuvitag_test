@@ -1,0 +1,19 @@
+from ruuvitag_sensor.ruuvi import RuuviTagSensor
+
+
+
+
+
+
+count = 0
+def handle_data(found_data):
+    global count
+    count = count + 1
+    myoutput = found_data[1]
+    myoutput["MAC"] = str(found_data[0])
+    myoutput["count"] = count
+    f = open("broadcast.log", "a")
+    f.write(str(myoutput))
+    f.close()
+    print(str(myoutput))
+RuuviTagSensor.get_datas(handle_data)
